@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cuide da Sua Pele Responsivo</title>
+    <link rel="stylesheet" href="styles/estilomenu.css"> <!-- Certifique-se de que o caminho esteja correto -->
+
+    <!-- Preload da Logo para diferentes resoluções -->
+    <link rel="preload" href="https://cuidedasuapele.com/wp-content/uploads/2024/10/logo-cuide-da-sua-pele-pc.webp" as="image" media="(min-width: 1025px)">
+    <link rel="preload" href="https://cuidedasuapele.com/wp-content/uploads/2024/10/logo-cuide-da-sua-pele-tab.webp" as="image" media="(min-width: 768px) and (max-width: 1024px)">
+    <link rel="preload" href="https://cuidedasuapele.com/wp-content/uploads/2024/10/logo-cuide-da-sua-pele-cel.webp" as="image" media="(max-width: 767px)">
+
+</head>
+<body>
+    <nav class="nav">
+        <div class="menu-logo">
+            <a href="https://cuidedasuapele.com/">
+                <picture>
+                    <source srcset="https://cuidedasuapele.com/wp-content/uploads/2024/10/logo-cuide-da-sua-pele-pc.webp" media="(min-width: 1025px)" alt="Logo Cuide da Sua Pele - Computador">
+                    <source srcset="https://cuidedasuapele.com/wp-content/uploads/2024/10/logo-cuide-da-sua-pele-tab.webp" media="(min-width: 768px) and (max-width: 1024px)" alt="Logo Cuide da Sua Pele - Tablet">
+                    <img src="https://cuidedasuapele.com/wp-content/uploads/2024/10/logo-cuide-da-sua-pele-cel.webp" alt="Logo Cuide da Sua Pele - Celular">
+                </picture>
+            </a>
+        </div>
+
+        <input type="checkbox" id="checkbox" class="checkbox"/>
+        <label for="checkbox" class="label-menu">
+            <span class="hamburger"></span>
+        </label>
+
+        <ul class="menu">
+            <li class="menu-item"><a href="https://cuidedasuapele.com/inicio">INÍCIO</a></li>
+            <li class="menu-item"><a href="https://cuidedasuapele.com/blog">BLOG</a></li>
+            <li class="menu-item"><a href="https://cuidedasuapele.com/loja">LOJA</a></li>
+            <li class="menu-item"><a href="https://cuidedasuapele.com/sobrenos">SOBRE</a></li>
+            <li class="menu-item"><a href="https://cuidedasuapele.com/contato">CONTATO</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
